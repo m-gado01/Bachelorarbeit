@@ -413,11 +413,11 @@
       <Option name="alg_id" type="QString" value="native:joinattributesbylocation"/>
       <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" type="QString" value=""/>
-        <Option name="component_description" type="QString" value=""/>
+        <Option name="color" type="QString" value="255,127,0,255"/>
+        <Option name="component_description" type="QString" value="Result must be written to disk as an SHP file"/>
         <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="1284"/>
-        <Option name="component_pos_y" type="double" value="948"/>
+        <Option name="component_pos_x" type="double" value="830"/>
+        <Option name="component_pos_y" type="double" value="180"/>
         <Option name="component_width" type="double" value="100"/>
         <Option name="outputs_collapsed" type="bool" value="true"/>
         <Option name="parameters_collapsed" type="bool" value="true"/>
@@ -515,11 +515,11 @@
       <Option name="alg_id" type="QString" value="native:joinattributesbylocation"/>
       <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" type="QString" value=""/>
-        <Option name="component_description" type="QString" value=""/>
+        <Option name="color" type="QString" value="255,127,0,255"/>
+        <Option name="component_description" type="QString" value="Result must be written to disk as an SHP file"/>
         <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="2073"/>
-        <Option name="component_pos_y" type="double" value="1090"/>
+        <Option name="component_pos_x" type="double" value="980"/>
+        <Option name="component_pos_y" type="double" value="570"/>
         <Option name="component_width" type="double" value="100"/>
         <Option name="outputs_collapsed" type="bool" value="true"/>
         <Option name="parameters_collapsed" type="bool" value="true"/>
@@ -652,11 +652,11 @@
       <Option name="alg_id" type="QString" value="otb:LargeScaleMeanShift"/>
       <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" type="QString" value=""/>
-        <Option name="component_description" type="QString" value=""/>
+        <Option name="color" type="QString" value="255,127,0,255"/>
+        <Option name="component_description" type="QString" value="Result must be written to disk as an SHP file"/>
         <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="740"/>
-        <Option name="component_pos_y" type="double" value="123"/>
+        <Option name="component_pos_x" type="double" value="380"/>
+        <Option name="component_pos_y" type="double" value="360"/>
         <Option name="component_width" type="double" value="100"/>
         <Option name="outputs_collapsed" type="bool" value="true"/>
         <Option name="parameters_collapsed" type="bool" value="true"/>
@@ -1147,7 +1147,7 @@
       <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
         <Option name="color" type="QString" value="255,127,0,255"/>
-        <Option name="component_description" type="QString" value="Result must be saved to disk!"/>
+        <Option name="component_description" type="QString" value="Result must be saved to disk as an SHP file"/>
         <Option name="component_height" type="double" value="60"/>
         <Option name="component_pos_x" type="double" value="1370"/>
         <Option name="component_pos_y" type="double" value="360"/>
@@ -1297,10 +1297,12 @@
     <Option name="INPUTClassLabelForSupervision" type="QString" value="id"/>
     <Option name="INPUTClassNumberToExtract" type="QString" value="1"/>
     <Option name="INPUTImageStatistics" type="QString" value="C:\Users\max-g\Desktop\QGIS\DATA\INPUTS\ImageStatistics.xml"/>
-    <Option name="INPUTRasterLayerRGB" type="QString" value="C:/Users/max-g/Desktop/QGIS/DATA/INPUTS/Emsaue_RGB_Subset_Heckrinder.tif"/>
-    <Option name="INPUTSamplePoints" type="QString" value="C:/Users/max-g/Desktop/QGIS/DATA/INPUTS/SamplePoints/SamplePoints.shp"/>
+    <Option name="INPUTRasterLayerRGB" type="QString" value="C:/Users/max-g/Desktop/QGIS/Daten/HALLIG/ObjectBasedImageAnalysis/RGB/Workflow/Input/RGB_Raster.tif"/>
+    <Option name="INPUTSamplePoints" type="QString" value="C:/Users/max-g/Desktop/QGIS/Daten/HALLIG/ObjectBasedImageAnalysis/RGB/Workflow/Input/SamplePoints/SamplePoints.shp"/>
+    <Option name="INPUTSamplePoints (2)" type="QString" value="C:/Users/max-g/Desktop/QGIS/Daten/HALLIG/ObjectBasedImageAnalysis/RGB/Workflow/Input/ValidationPoints/ValidationPoints.shp"/>
+    <Option name="INPUTSegmentsDirectory" type="QString" value="C:\Users\max-g\Desktop\TEST\HALLIG\Segments"/>
     <Option name="VERBOSE_LOG" type="bool" value="true"/>
-    <Option name="native:dissolve_1:OUTPUT: Dissolved Classification" type="QgsProcessingOutputLayerDefinition">
+    <Option name="native:dissolve_1:OUTPUT: Smoothed Classification" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
           <Option name="fileEncoding" type="QString" value="System"/>
@@ -1308,11 +1310,11 @@
         <Option name="sink" type="Map">
           <Option name="active" type="bool" value="true"/>
           <Option name="type" type="int" value="1"/>
-          <Option name="val" type="QString" value="C:/Users/max-g/Desktop/QGIS/DATA/OUTPUTS/DissolvedClassification/DissolvedClassification.shp"/>
+          <Option name="val" type="QString" value="C:/Users/max-g/Desktop/TEST/HALLIG/SmoothedClassification/SmoothedClassification.shp"/>
         </Option>
       </Option>
     </Option>
-    <Option name="native:joinattributesbylocation_1:OUTPUT: Sample Segments" type="QgsProcessingOutputLayerDefinition">
+    <Option name="native:joinattributesbylocation_2:OUTPUT: Validation Segments" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
           <Option name="fileEncoding" type="QString" value="System"/>
@@ -1320,19 +1322,20 @@
         <Option name="sink" type="Map">
           <Option name="active" type="bool" value="true"/>
           <Option name="type" type="int" value="1"/>
-          <Option name="val" type="QString" value="C:/Users/max-g/Desktop/QGIS/DATA/OUTPUTS/SampleSegments/SampleSegments.shp"/>
+          <Option name="val" type="QString" value="C:/Users/max-g/Desktop/TEST/HALLIG/ValidationSegments/ValidationSegments.shp"/>
         </Option>
       </Option>
     </Option>
+    <Option name="otb:LargeScaleMeanShift_1:OUTPUT: Segments" type="QString" value="C:/Users/max-g/Desktop/TEST/HALLIG/Segments/Segments.shp"/>
     <Option name="otb:TrainVectorClassifier_1:OUTPUT: Confusion Matrix" type="QString" value="C:/Users/max-g/Desktop/QGIS/DATA/OUTPUTS/ConfusionMatrix.csv"/>
-    <Option name="otb:VectorClassifier_1:OUTPUT: Classification" type="QString" value="C:/Users/max-g/Desktop/QGIS/DATA/OUTPUTS/Classification/Classification.shp"/>
-    <Option name="script:returndetectedanimals_1:OUTPUT: Output Directory" type="QString" value="C:\Users\max-g\Desktop\QGIS\DATA\OUTPUTS"/>
+    <Option name="otb:VectorClassifier_1:OUTPUT: Temporary Classification" type="QString" value="C:/Users/max-g/Desktop/TEST/HALLIG/TemporaryClassification/TemporaryClassification.shp"/>
+    <Option name="script:returndetectedanimals_1:OUTPUT: Output Directory" type="QString" value="C:\Users\max-g\Desktop\TEST\HALLIG"/>
   </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
   <Option name="modelVariables"/>
-  <Option name="model_group" type="QString" value="OBIA"/>
-  <Option name="model_name" type="QString" value="A_Complete"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="Model_A"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="INPUTClassLabelForSupervision" type="Map">
       <Option name="default" type="QString" value="id"/>
@@ -1557,9 +1560,9 @@
       <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
         <Option name="color" type="QString" value="255,127,0,255"/>
-        <Option name="component_description" type="QString" value="Image Statistics File must be manually inserted as an XML file!"/>
+        <Option name="component_description" type="QString" value="Image Statistics File must be manually inserted as an XML file"/>
         <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="1010"/>
+        <Option name="component_pos_x" type="double" value="1040"/>
         <Option name="component_pos_y" type="double" value="180"/>
         <Option name="component_width" type="double" value="100"/>
         <Option name="outputs_collapsed" type="bool" value="true"/>
