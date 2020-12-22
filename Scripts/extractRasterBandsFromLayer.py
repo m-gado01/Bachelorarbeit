@@ -35,16 +35,7 @@ class ExtractRasterBandsFromLayer(QgsProcessingAlgorithm):
         dataSource = gdal.Open(filePath, gdal.GA_ReadOnly);
         numberOfBands = dataSource.RasterCount;
         
-        for x in range(1, numberOfBands+1):
-            array = dataSource.GetRasterBand(x).ReadAsArray();
-            xSize = dataSource.RasterXSize;
-            ySize = dataSource.RasterYSize;
-            driver = gdal.GetDriverByName("GTiff");
-            rasterPath = outputFolder+'/Band_'+str(x)+'.tif';
-            outRaster = driver.Create(rasterPath, xSize, ySize, 1, gdal.GDT_UInt32);
-            outBand = outRaster.GetRasterBand(1);
-            outBand.WriteArray(array);
-            outRaster.FlushCache();
+        print(numberOfBands);
         
         return {self.OUTPUT: outputFolder}; 
     
